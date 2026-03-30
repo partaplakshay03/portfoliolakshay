@@ -1,7 +1,24 @@
-import React from 'react'
+import React from 'react';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import About from './components/About';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
-export default function App() {
+function App() {
   return (
-    <div>App</div>
-  )
+    <div className="min-h-screen bg-slate-950 selection:bg-sky-400 selection:text-slate-900">
+      <Navbar />
+      <main>
+        <Hero />
+        <About />
+        <Projects />
+        <Contact />
+      </main>
+      <Footer />
+    </div>
+  );
 }
+
+export default App;
